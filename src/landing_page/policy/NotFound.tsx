@@ -30,7 +30,7 @@ const NotFound: React.FC = () => {
           </div>
 
           <h1 className="text-white text-6xl md:text-9xl font-black tracking-tightest leading-none mb-6 uppercase">
-            ESTATE <br />
+             <br />
             <span className="text-white/20">NOT FOUND.</span>
           </h1>
 
