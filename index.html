@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./src/assets/new.png" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kindred | Deepening Connections</title>
+    <meta
+      name="description"
+      content="Kindred: The private sanctuary for modern family communication and collaboration."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            fontFamily: {
+              // Setting Rethink Sans as the primary sans font
+              sans: ["'Rethink Sans'", "sans-serif"],
+            },
+            letterSpacing: {
+              tighter: "-0.04em",
+              tightest: "-0.06em",
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      /* Smooth font rendering for that premium feel */
+      body {
+        margin: 0;
+        background-color: #050505;
+        color: white;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        overflow-x: hidden;
+      }
+
+      /* Custom scrollbar to match the "mad" dark aesthetic */
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #050505;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #222;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #eab308;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
