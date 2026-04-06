@@ -13,6 +13,7 @@ import FAQPage from "./landing_page/FAQS/FAQSPage";
 import AboutPage from "./landing_page/about/About";
 import TermsPage from "./landing_page/policy/Terms";
 import PrivacyPage from "./landing_page/policy/Privacy";
+import NotFound from "./landing_page/policy/NotFound";
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -35,6 +36,8 @@ function App() {
           <Route path="/about" element={<AboutPage />} />
           <Route path="/terms" element={<TermsPage />} />
           <Route path="/privacy" element={<PrivacyPage />} />
+          <Route path="*" element={<NotFound />} />
+       
         </Routes>
       </main>
       <KindredFooter />
