@@ -12,49 +12,53 @@ interface AdminAuthState {
 
 const initialState: AdminAuthState = {
     admin: null,
-    token: localStorage.getItem("adminToken"),
+    token: typeof window !== "undefined" ? localStorage.getItem("adminToken") : null,
     loading: false,
     otpSent: false,
     error: null,
     success: false,
 };
 
-// 1. Request OTP
+/**
+ * 1. Request OTP via Email
+ * Refactored to target the new email-based dispatch protocol
+ */
 export const sendAdminOtp = createAsyncThunk(
     "adminAuth/sendOtp",
-    async (payload: { phoneNumber: string }, { rejectWithValue }) => {
-        console.log("--- [REDUX] REQUESTING OTP DISPATCH ---", payload);
+    async (payload: { email: string }, { rejectWithValue }) => {
+        console.log("--- [REDUX] REQUESTING EMAIL OTP DISPATCH ---", payload);
         try {
             const response = await axiosInstance.post("admin/send-otp", payload);
-            console.log("✅ [REDUX] OTP API SUCCESS:", response.data);
+            console.log("✅ [REDUX] OTP DISPATCH SUCCESS:", response.data);
             return response.data;
         } catch (error: any) {
-            const errorMsg = error.response?.data?.message || "Failed to send OTP";
+            const errorMsg = error.response?.data?.message || "Failed to dispatch OTP email";
             console.error("❌ [REDUX] OTP API ERROR:", errorMsg);
             return rejectWithValue(errorMsg);
         }
     }
 );
 
-// 2. Verify OTP & Persist Token
+/**
+ * 2. Verify OTP via Email & Persist Token
+ */
 export const verifyAdminOtp = createAsyncThunk(
     "adminAuth/verifyOtp",
-    async (payload: { phoneNumber: string; otp: string }, { rejectWithValue }) => {
-        console.log("--- [REDUX] VERIFYING NEURAL KEY ---", payload);
+    async (payload: { email: string; otp: string }, { rejectWithValue }) => {
+        console.log("--- [REDUX] VERIFYING EMAIL AUTH KEY ---", payload);
         try {
             const response = await axiosInstance.post("admin/verify-otp", payload);
 
             if (response.data.token) {
-                console.log("🔑 [REDUX] TOKEN RECEIVED. PERSISTING TO LOCALSTORAGE...");
+                console.log("🔑 [REDUX] ACCESS TOKEN SECURED. PERSISTING...");
                 localStorage.setItem("adminToken", response.data.token);
-                console.log("💾 [REDUX] LOCALSTORAGE SYNC COMPLETE.");
             } else {
-                console.warn("⚠️ [REDUX] VERIFICATION SUCCESSFUL BUT NO TOKEN RETURNED.");
+                console.warn("⚠️ [REDUX] VERIFICATION PASSED BUT NO TOKEN PROVIDED.");
             }
 
             return response.data;
         } catch (error: any) {
-            const errorMsg = error.response?.data?.message || "Verification failed";
+            const errorMsg = error.response?.data?.message || "Verification of access key failed";
             console.error("❌ [REDUX] VERIFICATION ERROR:", errorMsg);
             return rejectWithValue(errorMsg);
         }
@@ -71,12 +75,12 @@ const adminAuthSlice = createSlice({
             state.success = false;
         },
         logoutAdmin: (state) => {
-            console.log("🔌 [REDUX] LOGGING OUT... CLEARING SESSION DATA.");
+            console.log("🔌 [REDUX] TERMINATING ADMIN SESSION.");
             state.admin = null;
             state.token = null;
             state.otpSent = false;
             localStorage.removeItem("adminToken");
-            console.log("🗑️ [REDUX] LOCALSTORAGE PURGED.");
+            console.log("🗑️ [REDUX] SECURITY PURGE COMPLETE.");
         },
     },
     extraReducers: (builder) => {
@@ -89,7 +93,7 @@ const adminAuthSlice = createSlice({
                 state.otpSent = false;
             })
             .addCase(sendAdminOtp.fulfilled, (state) => {
-                console.log("✨ [REDUX] SEND_OTP: FULFILLED. UI SHOULD SHOW OTP INPUT.");
+                console.log("✨ [REDUX] SEND_OTP: FULFILLED. AWAITING EMAIL CODE.");
                 state.loading = false;
                 state.otpSent = true;
                 state.success = true;
@@ -107,7 +111,7 @@ const adminAuthSlice = createSlice({
                 state.error = null;
             })
             .addCase(verifyAdminOtp.fulfilled, (state, action) => {
-                console.log("🚀 [REDUX] VERIFY_OTP: FULFILLED. UPDATING GLOBAL STATE.");
+                console.log("🚀 [REDUX] VERIFY_OTP: SUCCESS. SYNCING ADMIN PROFILE.");
                 state.loading = false;
                 state.admin = action.payload.admin;
                 state.token = action.payload.token;
