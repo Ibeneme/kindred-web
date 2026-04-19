@@ -19,7 +19,7 @@ import {
   ClipboardCheck,
   Map,
   CalendarDays,
-  LifeBuoy,
+  // LifeBuoy,
   ListChecks,
   AlertTriangle,
 } from "lucide-react";
@@ -97,7 +97,7 @@ const Sidebar: React.FC<{
       type: "suggestions",
     },
     { icon: <CreditCard size={18} />, label: "Campaigns", type: "campaigns" },
-    { icon: <LifeBuoy size={18} />, label: "Safety Nets", type: "safetynets" },
+    // { icon: <LifeBuoy size={18} />, label: "Safety Nets", type: "safetynets" },
   ];
 
   const culturalArchive: { icon: any; label: string; type: ContentEnum }[] = [

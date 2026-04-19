@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_BASE_URL = "https://kindred-server.onrender.com/api/v1/";
+const API_BASE_URL = "http://localhost:5005/api/v1/";
 // 'https://kindred-server.onrender.com'
 
 //"http://localhost:5005/api/v1/";
