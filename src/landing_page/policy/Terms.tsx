@@ -8,21 +8,21 @@ const TermsPage: React.FC = () => {
       tag: "INFRASTRUCTURE",
       title: "Service Protocol",
       content:
-        "Kindred operates as a digital estate facilitator. By using this platform, you acknowledge that our role is strictly limited to providing the secure scaffolding for family mapping and document storage. We do not mediate family disputes or verify the historical accuracy of uploaded data.",
+        "Kokohor operates as a digital estate facilitator. By using this platform, you acknowledge that our role is strictly limited to providing the secure scaffolding for family mapping and document storage. We do not mediate family disputes or verify the historical accuracy of uploaded data.",
     },
     {
       id: "02",
       tag: "ADMINISTRATION",
       title: "User Sovereignty",
       content:
-        "You are the sole administrator of your family vault. Kindred utilizes a Zero-Access architecture; we do not maintain backdoors or master recovery keys. Loss of access credentials results in the permanent, irreversible seal of your vault. We cannot reset passwords for you.",
+        "You are the sole administrator of your family vault. Kokohor utilizes a Zero-Access architecture; we do not maintain backdoors or master recovery keys. Loss of access credentials results in the permanent, irreversible seal of your vault. We cannot reset passwords for you.",
     },
     {
       id: "03",
       tag: "OWNERSHIP",
       title: "Heritage Rights",
       content:
-        "All assets—including family trees, photos, and voice recordings—remain the absolute intellectual property of your family. Kindred claims zero rights to your data and will never monetize your lineage. You grant us a limited, technical license only to process data for display within your private circle.",
+        "All assets—including family trees, photos, and voice recordings—remain the absolute intellectual property of your family. Kokohor claims zero rights to your data and will never monetize your lineage. You grant us a limited, technical license only to process data for display within your private circle.",
     },
     {
       id: "04",
@@ -36,7 +36,7 @@ const TermsPage: React.FC = () => {
       tag: "MAINTENANCE",
       title: "Estate Continuity",
       content:
-        "Maintenance of the digital estate requires an active subscription. Failure to maintain contributions may result in your vault entering a read-only state. After 12 months of total inactivity, Kindred reserves the right to archive data to preserve network resources.",
+        "Maintenance of the digital estate requires an active subscription. Failure to maintain contributions may result in your vault entering a read-only state. After 12 months of total inactivity, Kokohor reserves the right to archive data to preserve network resources.",
     },
   ];
 
@@ -97,7 +97,7 @@ const TermsPage: React.FC = () => {
         {/* Footer Note */}
         <div className="mt-12 text-center lg:text-left">
           <p className="text-gray-600 text-[10px] font-black uppercase tracking-[0.3em]">
-            Effective Date: April 2026 // Kindred Operations Center
+            Effective Date: April 2026 // Kokohor Operations Center
           </p>
         </div>
       </div>

@@ -147,7 +147,7 @@ const AdminAuth: React.FC = () => {
                     </div>
                     <input
                       type="email"
-                      placeholder="admin@kindred.app"
+                      placeholder="admin@kokohor.com"
                       className="w-full bg-white/[0.03] border border-white/10 rounded-2xl py-5 pl-14 pr-5 text-white focus:outline-none focus:border-yellow-500/50 transition-all font-medium placeholder:text-gray-700"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}

@@ -79,7 +79,7 @@ const NotFound: React.FC = () => {
               className="hover:text-yellow-500 cursor-pointer transition-colors"
             />
             <span className="text-[10px] font-black uppercase tracking-widest cursor-default">
-              Kindred v2.1
+            Kokohor v2.1
             </span>
           </div>
         </motion.div>

@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
           >
             <img
               src={logoImg}
-              alt="Kindred Logo"
+              alt="Kokohor Logo"
               className="w-full h-full object-contain"
             />
           </a>

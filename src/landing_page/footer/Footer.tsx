@@ -32,7 +32,7 @@ const KindredFooter: React.FC = () => {
             >
               <img
                 src={logoImg}
-                alt="Kindred Logo"
+                alt="Kokohor Logo"
                 className="w-full h-full object-contain"
               />
             </a>
@@ -112,7 +112,7 @@ const KindredFooter: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-10 border-t border-white/5 pt-12">
           <div className="flex flex-col md:flex-row items-center gap-8">
             <span className="text-gray-700 text-[10px] font-black uppercase tracking-[0.4em]">
-              © {currentYear} KINDRED . ALL RIGHTS RESERVED.
+              © {currentYear} Kokohor . ALL RIGHTS RESERVED.
             </span>
           </div>
 
@@ -133,7 +133,7 @@ const KindredFooter: React.FC = () => {
       {/* Oversized Background Label */}
       <div className="absolute -bottom-16 left-0 w-full text-center pointer-events-none opacity-[0.01] select-none">
         <h2 className="text-[25vw] font-black uppercase leading-none tracking-tighter">
-          Kindred
+          Kokohor
         </h2>
       </div>
     </footer>

@@ -50,7 +50,7 @@ const faqs: FAQCategory[] = [
       {
         question: "How are 'Village Traditions' preserved?",
         answer:
-          "Kindred allows families to digitize oral traditions. You can record elders, geotag ancestral village landmarks, and document the specific protocols of traditional rites, ensuring your cultural identity survives the digital migration.",
+          "Kokohor allows families to digitize oral traditions. You can record elders, geotag ancestral village landmarks, and document the specific protocols of traditional rites, ensuring your cultural identity survives the digital migration.",
       },
     ],
   },
@@ -148,7 +148,7 @@ const FAQPage: React.FC = () => {
             FAQ <br />
           </h1>
           <p className="text-gray-500 text-xl font-light max-w-2xl leading-relaxed mx-auto lg:mx-0">
-            Technical insight into the architecture of Kindred—the digital home
+            Technical insight into the architecture of Kokohor—the digital home
             built for family sovereignty and ancestral permanence.
           </p>
         </div>
@@ -172,7 +172,7 @@ const FAQPage: React.FC = () => {
                     {category.title}
                   </h2>
                   <p className="text-gray-400 text-sm font-medium leading-relaxed max-w-xs">
-                    In-depth details on how Kindred handles this pillar of the
+                    In-depth details on how Kokohor handles this pillar of the
                     family ecosystem.
                   </p>
                 </div>

@@ -38,7 +38,7 @@ const KindredStudio: React.FC = () => {
             >
               <span className="w-2 h-2 rounded-full bg-black" />
               <span className="text-black font-black uppercase tracking-[0.3em] text-[10px]">
-                The Kindred Standard
+                The Kokohor Standard
               </span>
             </motion.div>
             <h2 className="text-[#050505] text-5xl lg:text-8xl font-black tracking-tighter leading-[0.85]">

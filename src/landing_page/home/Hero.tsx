@@ -37,7 +37,7 @@ const Hero: React.FC = () => {
           </h1>
 
           <p className="text-gray-400 text-lg mb-8 max-w-lg leading-relaxed font-medium">
-            Kindred brings your inner circle closer with secure messaging,
+            Kokohor brings your inner circle closer with secure messaging,
             real-time family dashboards, and shared moments—all protected within
             your private digital sanctuary.
           </p>
@@ -117,7 +117,7 @@ const Hero: React.FC = () => {
                 </div>
                 <div>
                   <h3 className="text-white text-xl font-black tracking-tight">
-                    Kindred Network
+                    Kokohor Network
                   </h3>
                   <p className="text-yellow-500/60 text-xs font-bold uppercase tracking-widest">
                     System Active

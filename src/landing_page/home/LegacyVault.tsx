@@ -56,7 +56,7 @@ const LegacyVaultLight: React.FC = () => {
                 <span className="text-gray-300">VILLAGE VAULT.</span>
               </h3>
               <p className="text-gray-500 text-lg font-light leading-relaxed">
-                Beyond chat, Kindred provides a secure repository for the
+                Beyond chat, Kokohor provides a secure repository for the
                 pillars of your family identity.
               </p>
             </div>

@@ -22,7 +22,7 @@ const AboutPage: React.FC = () => {
           >
             <span className="w-2 h-2 rounded-full bg-yellow-500 animate-pulse" />
             <span className="text-[10px] font-black uppercase tracking-[0.3em]">
-              The Kindred Protocol
+              The Kokohor Protocol
             </span>
           </motion.div>
 
@@ -32,7 +32,7 @@ const AboutPage: React.FC = () => {
             className="text-black text-6xl lg:text-[11rem] font-black tracking-tighter leading-[0.8] mb-12 uppercase"
           >
             ABOUT<br />
-            <span className="text-gray-200 font-bold">KINDRED.</span>
+            <span className="text-gray-200 font-bold">Kokohor.</span>
           </motion.h1>
 
           <motion.p
@@ -40,7 +40,7 @@ const AboutPage: React.FC = () => {
             animate={{ opacity: 1 }}
             className="text-gray-600 text-xl lg:text-xl font-light max-w-4xl mx-auto leading-tight mb-16"
           >
-            Kindred is a digital ecosystem engineered to bridge the gap between
+            Kokohor is a digital ecosystem engineered to bridge the gap between
             instant communication and ancestral permanence. We build for the
             generations that follow.
           </motion.p>
@@ -58,7 +58,7 @@ const AboutPage: React.FC = () => {
               DEFEATING <br /> CHAT FATIGUE.
             </h3>
             <p className="text-white/40 text-xl font-light leading-relaxed mb-10">
-              Standard social platforms thrive on chaos. Kindred utilizes Signal
+              Standard social platforms thrive on chaos. Kokohor utilizes Signal
               Intelligence to filter the noise of daily interaction, distilling
               family activity into structured, actionable insights.
             </p>
@@ -178,7 +178,7 @@ const AboutPage: React.FC = () => {
             <span className="text-gray-200 font-bold">DIGITAL HOME.</span>
           </h2>
           <p className="text-gray-500 text-xl font-light mb-16 leading-relaxed">
-            Kindred is currently in active development for families who value
+            Kokohor is currently in active development for families who value
             permanence over the ephemeral nature of modern social media.
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

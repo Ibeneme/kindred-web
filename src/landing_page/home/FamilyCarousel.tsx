@@ -20,7 +20,7 @@ const families = [
     name: "Zenith Family",
     location: "Port Harcourt, NG",
     caption:
-      "Kindred turned our scattered family photos and documents into a single, permanent home. Now, our history is safe and accessible to every relative, no matter where they are.",
+      "Kokohor turned our scattered family photos and documents into a single, permanent home. Now, our history is safe and accessible to every relative, no matter where they are.",
     image: familyImg1,
     stat: "100% Data Ownership",
     tag: "Family Vault",
@@ -40,7 +40,7 @@ const families = [
     name: "Chen Family",
     location: "Toronto, CA",
     caption:
-      "We needed a place where our children could grow up seeing their heritage. Kindred is more than an app; it's the digital foundation for our future generations.",
+      "We needed a place where our children could grow up seeing their heritage. Kokohor is more than an app; it's the digital foundation for our future generations.",
     image: familyImg3,
     stat: "Multi-Gen Storage",
     tag: "Heritage Archive",
@@ -193,7 +193,7 @@ const FamilyCarousel: React.FC = () => {
                         Platform
                       </p>
                       <p className="text-yellow-500 font-black text-xl lg:text-2xl uppercase">
-                        Kindred Mobile
+                        Kokohor Mobile
                       </p>
                     </div>
                   </div>

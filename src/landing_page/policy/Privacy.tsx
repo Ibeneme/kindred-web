@@ -11,7 +11,7 @@ const PrivacyPage: React.FC = () => {
     {
       title: "Zero-Knowledge Encryption",
       content:
-        "Your family data is encrypted on your device using AES-256 before transmission. Kindred acts as a blind carrier. We have no technical means to decrypt your vault documents.",
+        "Your family data is encrypted on your device using AES-256 before transmission. Kokohor acts as a blind carrier. We have no technical means to decrypt your vault documents.",
     },
     {
       title: "Third-Party Interaction",
@@ -26,7 +26,7 @@ const PrivacyPage: React.FC = () => {
     {
       title: "Regional Sovereignty",
       content:
-        "Kindred complies with global data protection standards (GDPR, NDPR). Your data is hosted in high-security regional zones chosen for their robust legal protection of digital privacy.",
+        "Kokohor complies with global data protection standards (GDPR, NDPR). Your data is hosted in high-security regional zones chosen for their robust legal protection of digital privacy.",
     },
   ];
 
@@ -87,7 +87,7 @@ const PrivacyPage: React.FC = () => {
         {/* Bottom Contact Reference */}
         <div className="mt-12 text-center lg:text-left">
           <p className="text-gray-600 text-[10px] font-black uppercase tracking-[0.3em]">
-            Last Updated: April 2026 // Kindred Legal Dept.
+            Last Updated: April 2026 // Kokohor Legal Dept.
           </p>
         </div>
       </div>

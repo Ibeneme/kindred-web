@@ -209,7 +209,7 @@ const Sidebar: React.FC<{
               <ShieldCheck size={24} />
             </div>
             <h2 className="font-black text-xl tracking-tighter uppercase">
-              Kindred
+              Kokohor
             </h2>
           </div>
           <button className="lg:hidden" onClick={() => setIsOpen(false)}>

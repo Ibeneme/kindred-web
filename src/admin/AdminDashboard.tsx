@@ -74,7 +74,7 @@ const AdminDashboard: React.FC = () => {
             <Menu size={24} />
           </button>
           <span className="font-black uppercase tracking-tighter">
-            Kindred Admin
+          kokohor Admin
           </span>
         </div>
 

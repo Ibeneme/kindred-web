@@ -1,7 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import {
-
   Lock,
   History,
   Cpu,
@@ -26,7 +25,7 @@ const FeaturesPage: React.FC = () => {
           >
             <span className="w-2 h-2 rounded-full bg-yellow-500 animate-pulse" />
             <span className="text-[10px] font-black uppercase tracking-[0.3em]">
-              Kindred Protocol v2.0
+              Kokohor Protocol v2.0
             </span>
           </motion.div>
 
@@ -196,7 +195,7 @@ const FeaturesPage: React.FC = () => {
                   Signal <br /> Intelligence
                 </p>
                 <p className="text-white/40 text-xl font-light leading-relaxed">
-                  Kindred’s neural core scans activity and generates structured
+                  Kokohor’s neural core scans activity and generates structured
                   summaries. See critical updates, open polls, and announcements
                   at a glance without scrolling through history.
                 </p>
